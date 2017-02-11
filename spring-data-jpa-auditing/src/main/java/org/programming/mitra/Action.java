@@ -4,6 +4,7 @@ package org.programming.mitra;
  * @author Naresh Joshi
  */
 public enum Action {
+
     INSERTED("INSERTED"),
     UPDATED("UPDATED"),
     DELETED("DELETED");
