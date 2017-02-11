@@ -1,10 +1,12 @@
 package org.programming.mitra;
 
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
+@EntityListeners(FileEntityListener.class)
 class File extends Auditable<String> {
     @Id
     @GeneratedValue
