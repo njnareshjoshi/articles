@@ -1,5 +1,6 @@
 package org.programming.mitra;
 
+import javax.persistence.EntityManager;
 import javax.persistence.PrePersist;
 import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
@@ -31,8 +32,8 @@ public class FileEntityListener {
 
     @Transactional(MANDATORY)
     private void perform(File target, Action action) {
-        FileHistoryRepository fileHistoryRepository = BeanUtil.getBean(FileHistoryRepository.class);
-        fileHistoryRepository.save(new FileHistory(target, action));
+        EntityManager entityManager = BeanUtil.getBean(EntityManager.class);
+        entityManager.persist(new FileHistory(target, action));
     }
 
 }
