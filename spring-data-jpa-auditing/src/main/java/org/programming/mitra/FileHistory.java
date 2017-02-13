@@ -25,12 +25,14 @@ public class FileHistory {
     @JoinColumn(name = "file_id", foreignKey = @ForeignKey(name = "FK_file_history_file"))
     private File file;
 
+    private String fileContent;
+
     @CreatedBy
-    private String actionPerformedBy;
+    private String modifiedBy;
 
     @CreatedDate
     @Temporal(TIMESTAMP)
-    private Date actionDate;
+    private Date modifiedDate;
 
     @Enumerated(STRING)
     private Action action;
@@ -40,6 +42,7 @@ public class FileHistory {
 
     public FileHistory(File file, Action action) {
         this.file = file;
+        this.fileContent = file.toString();
         this.action = action;
     }
 
@@ -59,20 +62,28 @@ public class FileHistory {
         this.file = file;
     }
 
-    public String getActionPerformedBy() {
-        return actionPerformedBy;
+    public String getFileContent() {
+        return fileContent;
     }
 
-    public void setActionPerformedBy(String actionPerformedBy) {
-        this.actionPerformedBy = actionPerformedBy;
+    public void setFileContent(String fileContent) {
+        this.fileContent = fileContent;
     }
 
-    public Date getActionDate() {
-        return actionDate;
+    public String getModifiedBy() {
+        return modifiedBy;
     }
 
-    public void setActionDate(Date actionDate) {
-        this.actionDate = actionDate;
+    public void setModifiedBy(String modifiedBy) {
+        this.modifiedBy = modifiedBy;
+    }
+
+    public Date getModifiedDate() {
+        return modifiedDate;
+    }
+
+    public void setModifiedDate(Date modifiedDate) {
+        this.modifiedDate = modifiedDate;
     }
 
     public Action getAction() {
