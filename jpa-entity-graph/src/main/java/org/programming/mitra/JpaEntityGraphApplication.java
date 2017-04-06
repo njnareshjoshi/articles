@@ -4,6 +4,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
@@ -12,6 +13,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @SpringBootApplication
+@EnableJpaRepositories
 public class JpaEntityGraphApplication implements CommandLineRunner {
 
     @Resource
@@ -35,13 +37,21 @@ public class JpaEntityGraphApplication implements CommandLineRunner {
 
         System.out.println("Fetching through findOne");
         Collection<Employee> employees = employeeRepository.findAll();
-        System.out.println();
+        for (Employee employee : employees) {
+            System.out.println(employee);
+            for (Department department : employee.getDepartments()) {
+                System.out.println(department);
+            }
+        }
 
-        System.out.println("Fetching by with departments");
-        emp = employeeRepository.findById(1);
-        System.out.println(emp.toString());
     }
 }
+
+@Repository
+interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+    Employee findById(Integer id);
+}
+
 
 @Entity
 class Employee {
@@ -143,9 +153,4 @@ class Department {
                 ", name='" + name + '\'' +
                 '}';
     }
-}
-
-@Repository
-interface EmployeeRepository extends JpaRepository<Employee, Integer> {
-    Employee findById(Integer id);
 }
