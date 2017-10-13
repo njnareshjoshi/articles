@@ -1,33 +1,44 @@
-### microservice application running on docker
+# microservice application running on docker
 
-#pull and run mysql image
+## Pull and run mysql image
+```
 docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_HOST=192.168.99.100 -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=employeedb -d mysql/mysql-server:latest
+```
+
+## Can use below command to get into mysql bash and run queries
+```
 docker exec -it mysql mysql -uroot -p
 use employeedb;
+```
 
+## Create a spring boot project at start.spring.io and write a little rest api to fetch employees
 
-docker run --name app-container-name --link my-container-name:mysql -d app-that-uses-mysql
+## Test your application on localhost:8080
 
-
-#create a spring boot project at start.spring.io
-
-#create Dockerfile under the project directory
+## Create Dockerfile under the project directory and put below lines in it
+```
 FROM java:8
 VOLUME /tmp
 ADD target/microservices-with-docker-0.0.1.jar app.jar
 EXPOSE 8080
 ENTRYPOINT exec java -Djava.security.egd=file:/dev/./urandom -jar /app.jar
+```
 
-#build docker image
+## And build docker image
+```
 docker build -t njnareshjoshi/employeemicroservice .
+```
 
-#run docker image
+## Run your docker image and the microservice is up
+```
 docker run -p 8080:8080 -d --name employeemicroservice njnareshjoshi/employeemicroservice
+```
 
 
-OR
+## Or instead of creating Dockerfile we can also use docker-maven-plugin the pom
 
-#add docker maven plugin to your pom
+## Add docker-maven-plugin to your pom
+```
 <properties>
    <docker.image.prefix>njnareshjoshi</docker.image.prefix>
 </properties>
@@ -52,7 +63,19 @@ OR
     </plugin>
     </plugins>
 </build>
+```
 
-
-#and build your application using
+## And build your application using which will also build the docker image
+```
 ./mvnw clean package docker:build
+```
+
+## Run your docker image and the microservice is up
+```
+docker run -p 8080:8080 -d --name employeemicroservice njnareshjoshi/employeemicroservice
+```
+
+## If we want to run your microservice container in docker by linking mysql container in docker instead of directly pointing to url we can do tha by below command
+```
+docker run --name employeemicroservice --link mysql -d njnareshjoshi/employeemicroservice
+```
