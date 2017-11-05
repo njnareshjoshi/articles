@@ -54,7 +54,8 @@ Is this ok? (yes)
 ```
 
 
-## Install ExpressJS
+## Install 
 ```
-npm install express --save
+npm install -g nodemon
+npm install --save express mongoose body-parser node-restful
 ```
