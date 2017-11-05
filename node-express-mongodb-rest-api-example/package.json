@@ -1,0 +1,20 @@
+{
+  "name": "node-express-mongodb-rest-api-example",
+  "version": "1.0.0",
+  "description": "Simple application to demonstrate rest api creation with nodejs, expressjs and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "mongodb",
+    "rest"
+  ],
+  "author": "Naresh Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
