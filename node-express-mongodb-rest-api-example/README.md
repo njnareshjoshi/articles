@@ -1,8 +1,22 @@
 # node-express-mongodb-rest-api-example
 
-## Download and install NodeJS from its official site
 
-## Create new a directory and cd to it
+### Open command promt with Adminstrative rights and install Chocolatey, Chocolatey is a package manager for Windows which helps us install applications from command promt
+```
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+```
+
+### Install long term support version of NodeJS
+```
+choco install nodejs-lts
+```
+
+### Install latest version of MongoDB
+```
+choco install mongodb
+```
+
+## Create new a directory for the project and cd to it
 ```
 mkdir node-express-mongodb-rest-api-example
 cd node-express-mongodb-rest-api-example
