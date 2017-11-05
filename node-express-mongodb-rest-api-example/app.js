@@ -4,10 +4,17 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose')
 
+
+mongoose.connect('mongodb://localhost/employeedb', {useMongoClient : true})
+		.then((db) => {app.use('/api', require('./routes/api'));});
+
 const app = express();
 
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
+
+
+
 app.listen(8080);
 
 var employees = [
