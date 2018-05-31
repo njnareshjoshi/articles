@@ -1,0 +1,17 @@
+{
+  "name": "express-graphql-rest-api-example",
+  "version": "1.0.0",
+  "description": "A simple app to demonstrate graphql using nodejs, expressjs and graphql",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "graphql",
+    "restful"
+  ],
+  "author": "Naresh Joshi",
+  "license": "ISC"
+}
