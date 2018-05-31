@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: trade-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: trade-service-db
+
+logging:
+  level:
+    org: INFO

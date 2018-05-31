@@ -1,0 +1,33 @@
+RefData Service Tasks:
+	1.	Get: Get particular Ref data detail depending upon entity type and identifier.
+	2.	GetAll: Get list of all ref data depending upon entity type.
+
+Note: Entity type can be Counterparty, Commodity, Location.
+
+Step 2 :- Develop Trade Service
+	1.	Add/Update Trade 
+	1.1	Validate required input data and ref data(Counterparty, Commodity, Location) via ref service through message bus.
+	1.2	Save trade
+	2.	Delete Trade
+	3.	Find one Trade(View)
+	4.	Search Trade: Try to implement using mongo repository or  use custom repository via  mongo template, criteria.
+
+Note: This Search also require in Transfer screen so design accordingly.
+	5.	Nominate Trade: Mark Trade status as Nominated post transfer creation.
+
+Step 3 :- Develop Logistics Service
+	1.	Add/Update Transport 
+		1.1	Validate required input data and ref data(Origin, Destination: Location) via ref service through message bus.
+		1.2	Save Transport
+	2.	Delete Transport
+	3.	Find one Transport(View): Fetch particular Transport and related transfer details.
+	4.	Search Transport: Try to implement using mongo repository or  use custom repository via  mongo template, criteria.
+	5.	Nominate Transport: 
+Assume Input: [buy_trade_id, sell_trade_id, transport_id]
+		5.1	Validate buy, sell trade(for valid id, status etc.) via trade service.
+		5.2	Save two Transfer Record i.e. one for buy and other for sell.
+		5.3	Nominate trade.
+
+Develop GraphQL Part for gateway
+	1.	Get/GetAll/Search/View/find- functions are Query Type
+	2.	Add/Update/Delete/Nominate- functions are Mutation Type
