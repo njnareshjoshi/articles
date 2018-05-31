@@ -1,2 +1,2 @@
-# articles
-Codes for all my articles
+# Articles Repo
+holds repositories for my articles
