@@ -1,0 +1,72 @@
+<div class="panel panel-default" ng-controller="ServiceRequestCtrl">
+    <div class="panel-heading">
+        <div><span class="lead">Pending Requests</span></div>
+    </div>
+    <div class="panel-body">
+        <div class="tablecontainer">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Request Id</th>
+                    <th>Request Title</th>
+                    <th>Request Description</th>
+                    <th>Hotel</th>
+                    <th>Room No</th>
+                    <th>Customer Name</th>
+                    <th>Request Time</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="request in pendingRequests">
+                    <td><span ng-bind="request.id"></span></td>
+                    <td><span ng-bind="request.title"></span></td>
+                    <td><span ng-bind="request.description"></span></td>
+                    <td><span ng-bind="request.hotel"></span></td>
+                    <td><span ng-bind="request.roomNo"></span></td>
+                    <td><span ng-bind="request.customerName"></span></td>
+                    <td><span ng-bind="request.requestTime | date: 'dd MMM h:mm:ss a'"></span></td>
+                    <td>
+                        <button type="button" ng-click="resolve(request.id)" class="btn btn-success custom-width">
+                            Resolve
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="panel-heading">
+        <div><span class="lead">Resolved Requests</span></div>
+    </div>
+    <div class="panel-body">
+        <div class="tablecontainer">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Request Id</th>
+                    <th>Request Title</th>
+                    <th>Request Description</th>
+                    <th>Hotel</th>
+                    <th>Room No</th>
+                    <th>Customer Name</th>
+                    <th>Request Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="request in solvedRequests">
+                    <td><span ng-bind="request.id"></span></td>
+                    <td><span ng-bind="request.title"></span></td>
+                    <td><span ng-bind="request.description"></span></td>
+                    <td><span ng-bind="request.hotel"></span></td>
+                    <td><span ng-bind="request.roomNo"></span></td>
+                    <td><span ng-bind="request.customerName"></span></td>
+                    <td><span ng-bind="request.requestTime | date: 'dd MMM h:mm:ss a'"></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

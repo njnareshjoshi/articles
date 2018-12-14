@@ -1,0 +1,1 @@
+INSERT INTO `service_request` VALUES (2,'Naresh','Water Likage','Fabhotels','2017-08-28 11:41:32','B104','RESOLVED','Bathroom Problem'),(3,'Naresh','Quality of bed is not good.','FabHotels','2017-08-28 11:42:45','B104','PENDING','Problem in room'),(4,'Naresh','TV is not working properly','FabHotels','2017-08-28 11:59:15','B104','PENDING','Room Problem');

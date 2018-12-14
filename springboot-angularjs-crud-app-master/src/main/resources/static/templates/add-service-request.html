@@ -1,0 +1,104 @@
+<div class="panel panel-default" ng-controller="ServiceRequestCtrl">
+    <div class="panel-heading">
+        <div><span class="lead">Register Your Requests</span></div>
+    </div>
+
+    <div class="panel-body">
+        <div class="formcontainer">
+            <div class="alert alert-success" role="alert" ng-if="successMessage">{{successMessage}}</div>
+            <div class="alert alert-danger" role="alert" ng-if="errorMessage">{{errorMessage}}</div>
+
+            <form ng-submit="save(request)" name="myForm" class="form-horizontal">
+                <input type="hidden" ng-model="request.id"/>
+                <div class="row">
+                    <div class="form-group col-md-7">
+                        <label class="col-md-5 control-lable" for="customerName">Your Name</label>
+                        <div class="col-md-7">
+                            <input type="text" ng-model="request.customerName" id="customerName"
+                                   class="form-control input-sm"
+                                   placeholder="Enter your user name" required ng-minlength="3"/>
+                            <div class="has-error" ng-show="myForm.$dirty">
+                                <span ng-show="myForm.customerName.$error.required">This is a required field</span>
+                                <span ng-show="myForm.customerName.$error.minlength">Minimum length required is 3</span>
+                                <span ng-show="myForm.customerName.$invalid">This field is invalid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-7">
+                        <label class="col-md-5 control-lable" for="hotel">Hotel</label>
+                        <div class="col-md-7">
+                            <input type="text" ng-model="request.hotel" id="hotel"
+                                   class="form-control input-sm"
+                                   placeholder="Hotel" required/>
+                            <div class="has-error" ng-show="myForm.$dirty">
+                                <span ng-show="myForm.hotel.$error.required">This is a required field</span>
+                                <span ng-show="myForm.hotel.$invalid">This field is invalid </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-7">
+                        <label class="col-md-5 control-lable" for="roomNo">Room Number</label>
+                        <div class="col-md-7">
+                            <input type="text" ng-model="request.roomNo" id="roomNo"
+                                   class="form-control input-sm"
+                                   placeholder="Room Number" required/>
+                            <div class="has-error" ng-show="myForm.$dirty">
+                                <span ng-show="myForm.roomNo.$error.required">This is a required field</span>
+                                <span ng-show="myForm.roomNo.$invalid">This field is invalid </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-7">
+                        <label class="col-md-5 control-lable" for="title">Request Title</label>
+                        <div class="col-md-7">
+                            <input type="text" ng-model="request.title" id="title"
+                                   class="form-control input-sm"
+                                   placeholder="Request Title" required/>
+                            <div class="has-error" ng-show="myForm.$dirty">
+                                <span ng-show="myForm.title.$error.required">This is a required field</span>
+                                <span ng-show="myForm.title.$invalid">This field is invalid </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-7">
+                        <label class="col-md-5 control-lable" for="description">Request Description</label>
+                        <div class="col-md-7">
+                            <textarea class="form-control" rows="5" ng-model="request.description" id="description"
+                                      class="form-control input-sm"
+                                      placeholder="Request Description" required></textarea>
+                            <div class="has-error" ng-show="myForm.$dirty">
+                                <span ng-show="myForm.description.$error.required">This is a required field</span>
+                                <span ng-show="myForm.description.$invalid">This field is invalid </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input type="submit" value="Submit" class="btn btn-primary btn-sm"
+                                   ng-disabled="myForm.$invalid || myForm.$pristine">
+                            <button type="button" ng-click="reset()" class="btn btn-warning btn-sm"
+                                    ng-disabled="myForm.$pristine">
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
