@@ -22,6 +22,20 @@ This repository contains code exercises for my blog [ProgrammingMitra](https://w
 * [Plain Old Java Object (POJO) Explained](https://www.programmingmitra.com/2016/05/plain-old-java-object-pojo-explained.html)
 * [Types of References in Java(Strong Soft Weak Phantom)](https://www.programmingmitra.com/2016/05/types-of-references-in-javastrong-soft.html)
 
+### Why In Java
+* [Java Integer Cache - Why Integer.valueOf(127) == Integer.valueOf(127) Is True](https://www.programmingmitra.com/2018/11/java-integer-cache.html)
+* [Why Instance Variable Of Super Class Is Not Overridden In Sub Class](https://www.programmingmitra.com/2018/11/why-instance-variable-of-super-class-is-not-overridden-In-sub-class.html)
+* [Why String is Immutable and Final in Java](https://www.programmingmitra.com/2018/02/why-string-is-immutable-and-final-in-java.html)
+* [Why String is Stored in String Constant Pool](https://www.programmingmitra.com/2018/02/why-string-is-stored-in-constant-pool.html)
+* [Why We Should Follow Method Overriding Rules](https://www.programmingmitra.com/2017/12/why-we-should-follow-method-overriding-rules.html)
+* [Why Should We Follow Method Overloading Rules](https://www.programmingmitra.com/2017/12/why-to-follow-method-overloading-rules.html)
+* [How Does JVM Handle Method Overloading and Overriding Internally](https://www.programmingmitra.com/2017/05/how-does-jvm-handle-method-overriding-internally.html)
+* [Java Cloning - Why Even Copy Constructors Are Not Sufficient](https://www.programmingmitra.com/2017/01/java-cloning-why-copy-constructors-are-not-sufficient-or-good.html)
+* [Java Cloning - Copy Constructor versus Cloning](https://www.programmingmitra.com/2017/01/Java-cloning-copy-constructor-versus-Object-clone-or-cloning.html)
+* [Why an outer Java class can’t be static](https://www.programmingmitra.com/2016/10/why-outer-java-class-cant-be-static.html)
+* [Why an outer Java class can’t be private or protected](https://www.programmingmitra.com/2016/10/why-a-java-class-can-not-be-private-or-protected.html)
+* [Why Java is Purely Object Oriented Language Or Why Not](https://www.programmingmitra.com/2016/06/why-java-is-purely-object-oriented-or-why-not.html)
+* [Why Single Java Source File Can Not Have More Than One public class](https://www.programmingmitra.com/2016/05/Why-Single-Java-Source-File-Can-Not-Have-More-Than-One-public-class.html)
 
 ### ClassNotFoundException Vs NoClassDefFoundError
 * [Difference Between Classnotfoundexception And Noclassdeffounderror](https://www.programmingmitra.com/2017/04/Difference-Between-ClassNotFoundException-and-NoClassDefFoundError.html)
