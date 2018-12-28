@@ -1,3 +1,5 @@
+This project contains code exercises for my blog [ProgrammingMitra](https://www.programmingmitra.com).
+
 ### Spring
 * [Introduction To Spring](https://www.programmingmitra.com/2016/05/introduction-to-spring.html)
 * [Spring Modular Architecture](https://www.programmingmitra.com/2018/07/spring-modular-architecture.html)
