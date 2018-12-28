@@ -1,6 +1,6 @@
 This repository contains code exercises for my blog [ProgrammingMitra](https://www.programmingmitra.com).
 
-### Spring Framework
+### Spring
 * [Introduction To Spring](https://www.programmingmitra.com/2016/05/introduction-to-spring.html)
 * [Spring Modular Architecture](https://www.programmingmitra.com/2018/07/spring-modular-architecture.html)
 
@@ -9,6 +9,19 @@ This repository contains code exercises for my blog [ProgrammingMitra](https://w
 * [JPA Auditing: Persisting Audit Logs Automatically using EntityListeners](https://www.programmingmitra.com/2017/02/automatic-jpa-auditing-persisting-audit-logs-automatically-using-entityListeners.html)
 * [AutoWiring Spring Beans Into Classes Not Managed By Spring Like JPA Entity Listeners](https://www.programmingmitra.com/2017/03/AutoWiring-Spring-Beans-Into-Classes-Not-Managed-By-Spring-Like-JPA-Entity-Listeners.html)
 * [Implementing Our Own Custom Spring Data Solr Repository](https://www.programmingmitra.com/2016/01/how-to-write-custom-implementation-for.html)
+
+### What In Java
+* [What is Variable Shadowing and Hiding in Java](https://www.programmingmitra.com/2018/02/what-is-variable-shadowing-and-hiding.html)
+* [Everything About Method Overloading Vs Method Overriding](https://www.programmingmitra.com/2017/05/everything-about-method-overloading-vs-method-overriding.html)
+* [Everything About ClassNotFoundException Vs NoClassDefFoundError](https://www.programmingmitra.com/2017/04/Difference-Between-ClassNotFoundException-and-NoClassDefFoundError.html)
+* [Java Cloning - Copy Constructor versus Cloning](https://www.programmingmitra.com/2017/01/Java-cloning-copy-constructor-versus-Object-clone-or-cloning.html)
+* [Java Cloning and Types of Cloning (Shallow and Deep) in Details with Example](https://www.programmingmitra.com/2016/11/Java-Cloning-Types-of-Cloning-Shallow-Deep-in-Details-with-Example.html)
+* [Java Lambda Expression Explained with Example](https://www.programmingmitra.com/2016/06/java-lambda-expression-explained-with-example.html)
+* [JDK and JRE File Structure](https://www.programmingmitra.com/2016/05/jdk-and-jre-file-structure.html)
+* [5 Different ways to create objects in Java with Example](https://www.programmingmitra.com/2016/05/different-ways-to-create-objects-in-java-with-example.html)
+* [Plain Old Java Object (POJO) Explained](https://www.programmingmitra.com/2016/05/plain-old-java-object-pojo-explained.html)
+* [Types of References in Java(Strong Soft Weak Phantom)](https://www.programmingmitra.com/2016/05/types-of-references-in-javastrong-soft.html)
+
 
 ### ClassNotFoundException Vs NoClassDefFoundError
 * [Difference Between Classnotfoundexception And Noclassdeffounderror](https://www.programmingmitra.com/2017/04/Difference-Between-ClassNotFoundException-and-NoClassDefFoundError.html)
