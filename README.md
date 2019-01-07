@@ -1,4 +1,4 @@
-This repository along with the [exercises](https://github.com/njnareshjoshi/exercises) repository contains code exercises for my blog [ProgrammingMitra](https://www.programmingmitra.com).
+This repository along with the [exercises](https://github.com/njnareshjoshi/exercises) repository contains coding examples for my blog [ProgrammingMitra](https://www.programmingmitra.com).
 
 ### Spring
 * [Introduction To Spring](https://www.programmingmitra.com/2016/05/introduction-to-spring.html)
