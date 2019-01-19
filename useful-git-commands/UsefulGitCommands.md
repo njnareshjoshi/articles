@@ -8,7 +8,7 @@ While other version control systems e.g. CVS, SVN keeps most of their data like 
 
 
 
-However allmost all IDEs support git out of then box and we do not require submit the git commands manually but it is always good to understand these commands. Below is a list of some git commands to work efficiently with git. 
+However allmost all IDEs support git out of the box and we do not require submit the git commands manually but it is always good to understand these commands. Below is a list of some git commands to work efficiently with git. 
 
 
 
