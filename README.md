@@ -22,6 +22,7 @@ This repository along with the [exercises](https://github.com/njnareshjoshi/exer
 * [Plain Old Java Object (POJO) Explained](https://www.programmingmitra.com/2016/05/plain-old-java-object-pojo-explained.html)
 * [Types Of References In Java(Strong Soft Weak Phantom)](https://www.programmingmitra.com/2016/05/types-of-references-in-javastrong-soft.html)
 * [What is Serialization? Everything About Java Serialization Explained With Example](https://www.programmingmitra.com/2019/08/what-is-serialization-everything-about-java-serialization-explained-with-example.html)
+* [Java Serialization Magic Methods And Their Uses With Example](https://www.programmingmitra.com/2019/08/java-serialization-magic-methods-and-their-uses-with-example.html)
 
 ### Why In Java
 * [Java Integer Cache - Why Integer.valueOf(127) == Integer.valueOf(127) Is True](https://www.programmingmitra.com/2018/11/java-integer-cache.html)
@@ -86,3 +87,4 @@ This repository along with the [exercises](https://github.com/njnareshjoshi/exer
 * [What is Serialization? Everything About Java Serialization Explained With Example](https://www.programmingmitra.com/2019/08/what-is-serialization-everything-about-java-serialization-explained-with-example.html)
 * [How To Customize Serialization In Java By Using Externalizable Interface](https://www.programmingmitra.com/2019/08/how-to-customize-serialization-in-java-by-using-externalizable-interface.html)
 * [What are 5 Different Ways To Create Objects In Java? Explained With Example](https://www.programmingmitra.com/2016/05/different-ways-to-create-objects-in-java-with-example.html)
+* [Java Serialization Magic Methods And Their Uses With Example](https://www.programmingmitra.com/2019/08/java-serialization-magic-methods-and-their-uses-with-example.html)
